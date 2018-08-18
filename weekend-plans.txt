@@ -1,0 +1,22 @@
+*Have a simple html to show yours activities planned
+*activities -> checkpoints -> goals
+*activities -> routine -> reward
+*acitivities -> time-related
+*find some good pics to put on activities, goals, checkpoint and grand goal, or something like that(good to have)
+*do the mvp on this weekend
+		
+		*acitivities schema must-have*
+	
+ done | name | description | checkpoint_id | priority | id | reward
+
+		*checkpoint schema must-have*
+
+ done | deadline | name | description | id | activities_id(manys to one) | 
+
+		*goal schema must-have*
+
+ done | name | description | id | checkpoints_id(manys to one) | user_id
+
+		*user must-have*
+
+ name | bias | id | goal_id
